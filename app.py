@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return ("Hello world")
+    return ("This is Project-1.")
 
 
 # @app.route('/addition/<int:a>/<int:b>')
