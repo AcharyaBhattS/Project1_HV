@@ -3,8 +3,9 @@ from datetime import datetime, timedelta
 import pytz
 import os
 
-
-g = Github("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")
+# Insert github token
+# g = Github("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")
+g = Github("")
 
 repo = g.get_repo("AcharyaBhattS/Project1_HV")
 
