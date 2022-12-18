@@ -5,11 +5,11 @@ import re
 import string
 
 
-g = Github("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")
+g = Github("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")
 
 repo = g.get_repo("AcharyaBhattS/Project1_HV")
 
-branch = g.get_repo("AcharyaBhattS/Project1_HV").get_branch("master")
+branch = g.get_repo("AcharyaBhattS/Project1_HV").get_branch("main")
 # print(branch.commit.sha)
 ShaVal = branch.commit.sha
 
@@ -26,7 +26,7 @@ print("Commit Timestamp: ",ts_Commit,"\n")
 '''
 
 # currentTime = str(datetime.now())
-# gmtTime = datetime.now(pytz.timezone('GMT'))
+gmtTime = datetime.now(pytz.timezone('GMT'))
 # ts_Now = gmtTime.timestamp()
 # print("Current Time: ", currentTime)
 
@@ -66,7 +66,7 @@ print("Commit Timestamp: ",ts_Commit,"\n")
 # str1 = ''.join(str(e) for e in list1)
 
 
-todays_date = datetime.now()
+todays_date = gmtTime
 
 todays_day = todays_date.day
 # print('Day: ', todays_day)
